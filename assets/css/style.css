@@ -116,3 +116,92 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   .gallery{grid-template-columns:1fr;}
   .gallery img{height:160px;}
 }
+/* ===== Timeline (Events) ===== */
+
+:root {
+  --timeline-blue: #5f6f82; /* slate blue */
+}
+
+/* Timeline container */
+#events {
+  position: relative;
+  padding-left: 3rem;
+}
+
+/* Vertical line */
+#events::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 4rem;
+  bottom: 0;
+  width: 1px;
+  background: var(--timeline-blue);
+  opacity: 0.5;
+}
+
+/* Year */
+.timeline-year {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 3rem 0 1.5rem;
+  padding-left: 2rem;
+}
+
+/* Horizontal connector */
+.timeline-year::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--timeline-blue);
+  opacity: 0.5;
+}
+
+/* Accordion item = event block */
+.acc-item {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 2px;
+  background: #fff;
+}
+
+/* Event title button */
+.acc-btn {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+/* Event title */
+.acc-btn h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Meta text (date + location) */
+.acc-meta {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Content inside expanded event */
+.acc-content {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Slideshow placeholder sizing */
+.event-media {
+  max-width: 420px;
+  margin-top: 1rem;
+}
