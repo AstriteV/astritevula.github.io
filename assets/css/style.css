@@ -133,7 +133,7 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   content: "";
   position: absolute;
   left: 1rem;
-  top: 4rem;
+  top: 2.5rem;
   bottom: 0;
   width: 1px;
   background: var(--timeline-blue);
