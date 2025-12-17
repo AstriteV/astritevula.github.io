@@ -205,3 +205,45 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   max-width: 420px;
   margin-top: 1rem;
 }
+/* ===== Timeline (Events) ===== */
+
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--timeline-blue);
+  opacity: 0.6;
+}
+
+/* Year label */
+.timeline-year {
+  position: relative;
+  margin-left: -3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Each event */
+.acc-item {
+  position: relative;
+}
+
+/* Horizontal connector */
+.timeline-connector {
+  position: absolute;
+  left: -2rem;
+  top: 1.4rem;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--timeline-blue);
+  opacity: 0.6;
+}
