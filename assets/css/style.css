@@ -74,7 +74,8 @@ nav ul{
 
 .timeline-year{
   position:absolute;
-  left:-5rem;
+  left:-6.2rem;
+  top:0;
   font-weight:700;
 }
 
