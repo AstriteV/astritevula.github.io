@@ -131,18 +131,6 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   padding-left: 2rem;
 }
 
-/* Horizontal connector */
-.timeline-year::before {
-  content: "";
-  position: absolute;
-  left: -1rem;
-  top: 50%;
-  width: 1.5rem;
-  height: 1px;
-  background: var(--timeline-blue);
-  opacity: 0.5;
-}
-
 /* Accordion item = event block */
 .acc-item {
   position: relative;
