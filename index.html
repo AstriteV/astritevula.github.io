@@ -4,170 +4,152 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Astrite Vula</title>
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="nav-inner">
-      <div class="brand">Astrite Vula</div>
-      <nav>
-        <ul>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#works">Works for Sale</a></li>
-          <li><a href="#bio">Bio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+<header>
+  <div class="nav-inner">
+    <div class="brand">Astrite Vula</div>
+    <nav>
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#works">Works for Sale</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- EVENTS -->
+  <section id="events" class="hero reveal">
+    <h2 class="section-title events-title">Events</h2>
+
+    <div class="timeline">
+
+      <!-- 2025 -->
+      <div class="timeline-group">
+        <div class="timeline-year">2025</div>
+
+        <div class="accordion">
+
+          <!-- Event 1 -->
+          <div class="acc-item reveal">
+            <button class="acc-btn" data-target="acc-2025-1">
+              <div class="acc-meta">
+                <div class="acc-title">Arts Richmond Winter Showcase</div>
+                <div class="acc-sub">
+                  Premier House, Twickenham · 16 Dec 2025 – 20 Feb 2026
+                </div>
+              </div>
+              <div class="acc-icon">▾</div>
+            </button>
+
+            <div id="acc-2025-1" class="acc-panel">
+              <p>
+                Curated by Catherine Sweet (BobCat Gallery).  
+                Open by appointment (Monday–Friday).
+              </p>
+              <p>
+                <strong>Private View</strong> (Curator’s Tour & Christmas drinks):  
+                Monday 22 Dec, 4.30–7.30pm (RSVP required).
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="acc-item reveal">
+            <button class="acc-btn" data-target="acc-2025-2">
+              <div class="acc-meta">
+                <div class="acc-title">RAG Annual 25</div>
+                <div class="acc-sub">
+                  POSK Gallery, London · 2–13 Nov 2025
+                </div>
+              </div>
+              <div class="acc-icon">▾</div>
+            </button>
+
+            <div id="acc-2025-2" class="acc-panel">
+              <p>Group exhibition.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="timeline-group">
+        <div class="timeline-year">2024</div>
+        <div class="accordion">
+          <!-- Add 2024 events here later -->
+        </div>
+      </div>
+
     </div>
-  </header>
+  </section>
 
-  <main class="container">
+  <!-- WORKS -->
+  <section id="works" class="reveal" style="margin-top:44px;">
+    <h2 class="section-title">Works for Sale</h2>
+    <div class="gallery">
+      <img src="assets/images/01.jpg" data-full="assets/images/01.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/02.jpg" data-full="assets/images/02.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/03.jpg" data-full="assets/images/03.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/04.jpg" data-full="assets/images/04.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/05.jpg" data-full="assets/images/05.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/06.jpg" data-full="assets/images/06.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/07.jpg" data-full="assets/images/07.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/08_Home_A4.jpg" data-full="assets/images/08_Home_A4.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/09_Uniqueorn_A4.jpg" data-full="assets/images/09_Uniqueorn_A4.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/Matrix.png" data-full="assets/images/Matrix.png" alt="Artwork" loading="lazy">
+      <img src="assets/images/3_4_Astrite Vula_Nature & Humanity_Oiloncanvas_40x30x3cm.jpg" data-full="assets/images/3_4_Astrite Vula_Nature & Humanity_Oiloncanvas_40x30x3cm.jpg" alt="Artwork" loading="lazy">
+      <img src="assets/images/4_4_Astrite Vula_Peaceful War_Oiloncanvas_40x30x3cm.jpg" data-full="assets/images/4_4_Astrite Vula_Peaceful War_Oiloncanvas_40x30x3cm.jpg" alt="Artwork" loading="lazy">
+    </div>
+  </section>
 
-    <!-- EVENTS -->
-    <section id="events" class="hero reveal">
-      <h2 class="section-title events-title">Events</h2>
+  <div id="lightbox" class="lightbox">
+    <img src="" alt="preview">
+  </div>
 
-      <div class="timeline">
+  <!-- BIO -->
+  <section id="bio" class="reveal" style="margin-top:44px;">
+    <h2 class="section-title">Bio</h2>
+    <div class="bio">
+      <p><strong>Astrite Vula</strong> is a Twickenham-based freelance artist exploring the intersections of perspective, light, and colour through abstract and surreal forms.</p>
+      <p>Her practice combines traditional mediums with an intuitive sense of movement and space.</p>
+      <p>She holds a Postgraduate Diploma and BA in Fine Arts.</p>
+    </div>
+  </section>
 
-        <div class="timeline-group">
-          <div class="timeline-year">2025</div>
+  <!-- CONTACT -->
+  <section id="contact" class="reveal" style="margin-top:44px;">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <a href="mailto:astritev@gmail.com">astritev@gmail.com</a>
+    </div>
+  </section>
 
-          <div class="accordion">
+  <!-- SOCIAL -->
+  <section id="social" class="reveal" style="margin-top:18px;">
+    <h2 class="section-title">Follow</h2>
+    <div class="social">
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://www.behance.net/" target="_blank">Behance</a>
+    </div>
+  </section>
 
-            <!-- Event 1 -->
-            <div class="acc-item reveal">
-              <button class="acc-btn"
-                      data-target="acc-artsrichmond"
-                      data-default-open="true"
-                      aria-expanded="false">
+  <footer>© 2025 Astrite Vula</footer>
 
-                <div class="acc-meta">
-                  <div class="acc-title">Arts Richmond Winter Showcase</div>
-                  <div class="acc-sub">Premier House, Twickenham · 16 Dec 2025 – 20 Feb 2026</div>
-                </div>
+</main>
 
-                <div class="acc-icon">▾</div>
-              </button>
-
-              <div id="acc-artsrichmond" class="acc-panel">
-                <p>
-                  Curated by Catherine Sweet (BobCat Gallery).
-                  Open by appointment (Monday–Friday).
-                </p>
-
-                <p>
-                  <strong>Private View</strong> (Curator’s Tour & Christmas drinks):
-                  Monday 22 Dec, 4.30–7.30pm (RSVP required).
-                </p>
-              </div>
-            </div>
-
-            <!-- Event 2 -->
-            <div class="acc-item reveal">
-              <button class="acc-btn"
-                      data-target="acc-ragannual25"
-                      data-default-open="false"
-                      aria-expanded="false">
-
-                <div class="acc-meta">
-                  <div class="acc-title">RAG Annual 25</div>
-                  <div class="acc-sub">POSK Gallery, London · 2–13 Nov 2025</div>
-                </div>
-
-                <div class="acc-icon">▾</div>
-              </button>
-
-              <div id="acc-ragannual25" class="acc-panel">
-                <p>Add your short description here.</p>
-              </div>
-            </div>
-
-            <!-- Event 3 (optional - add later)
-            <div class="acc-item reveal">
-              <button class="acc-btn"
-                      data-target="acc-uniqueid"
-                      data-default-open="false"
-                      aria-expanded="false">
-                <div class="acc-meta">
-                  <div class="acc-title">Event title</div>
-                  <div class="acc-sub">Location · Dates</div>
-                </div>
-                <div class="acc-icon">▾</div>
-              </button>
-
-              <div id="acc-uniqueid" class="acc-panel">
-                <p>Description...</p>
-              </div>
-            </div>
-            -->
-
-          </div>
-        </div>
-
-        <div class="timeline-group">
-          <div class="timeline-year">2024</div>
-          <div class="accordion">
-            <!-- Add 2024 events here -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- WORKS -->
-    <section id="works" class="reveal" style="margin-top:44px;">
-      <h2 class="section-title">Works for Sale</h2>
-      <div class="gallery">
-        <img src="assets/images/01.jpg" data-full="assets/images/01.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/02.jpg" data-full="assets/images/02.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/03.jpg" data-full="assets/images/03.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/04.jpg" data-full="assets/images/04.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/05.jpg" data-full="assets/images/05.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/06.jpg" data-full="assets/images/06.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/07.jpg" data-full="assets/images/07.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/08_Home_A4.jpg" data-full="assets/images/08_Home_A4.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/09_Uniqueorn_A4.jpg" data-full="assets/images/09_Uniqueorn_A4.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/Matrix.png" data-full="assets/images/Matrix.png" alt="Artwork" loading="lazy">
-        <img src="assets/images/3_4_Astrite Vula_Nature & Humanity_Oiloncanvas_40x30x3cm.jpg" data-full="assets/images/3_4_Astrite Vula_Nature & Humanity_Oiloncanvas_40x30x3cm.jpg" alt="Artwork" loading="lazy">
-        <img src="assets/images/4_4_Astrite Vula_Peaceful War_Oiloncanvas_40x30x3cm.jpg" data-full="assets/images/4_4_Astrite Vula_Peaceful War_Oiloncanvas_40x30x3cm.jpg" alt="Artwork" loading="lazy">
-      </div>
-    </section>
-
-    <div id="lightbox" class="lightbox"><img src="" alt="preview"></div>
-
-    <!-- BIO -->
-    <section id="bio" class="reveal" style="margin-top:44px;">
-      <h2 class="section-title">Bio</h2>
-      <div class="bio">
-        <p><strong>Astrite Vula</strong> is a Twickenham-based freelance artist exploring the intersections of perspective, light, and colour through abstract and surreal forms. Her recent series of four-dimensional paintings invite the viewer into an immersive experience of tonal rhythm and shifting texture — works that evoke both the physical and the metaphysical.</p>
-        <p>Drawing from deconstructivist and poststructuralist ideas, Astrite’s practice combines traditional mediums such as oils, acrylics, and drawing tools with an intuitive sense of movement and space. Each work is a conversation between material, energy, and perception — minimal yet deeply layered.</p>
-        <p>Her background spans installation, performance, branding, and design, complemented by contributions to Arts Richmond’s committees and the Riverside Artists Group. Astrite holds a Postgraduate Diploma and BA in Fine Arts.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="reveal" style="margin-top:44px;">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact">
-        <a href="mailto:astritev@gmail.com">astritev@gmail.com</a>
-      </div>
-    </section>
-
-    <!-- SOCIAL -->
-    <section id="social" class="reveal" style="margin-top:18px;">
-      <h2 class="section-title">Follow</h2>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/astrite-vula-9955b565/?originalSubdomain=uk" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/astritevula/?hl=en" target="_blank">Instagram</a>
-        <a href="https://www.behance.net/astritevula?tracking_source=search_projects%7Castrite" target="_blank">Behance</a>
-      </div>
-    </section>
-
-    <footer>© 2025 Astrite Vula</footer>
-  </main>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
