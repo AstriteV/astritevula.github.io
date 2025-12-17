@@ -116,76 +116,22 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   .gallery{grid-template-columns:1fr;}
   .gallery img{height:160px;}
 }
-/* ===== Timeline (Events) ===== */
+/* ===== Timeline (Events) – CLEAN RESET ===== */
 
 :root {
-  --timeline-blue: #5f6f82; /* slate blue */
+  --timeline-blue: #5f6f82;
 }
-
-/* Year */
-.timeline-year {
-  position: relative;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 3rem 0 1.5rem;
-  padding-left: 2rem;
-}
-
-/* Accordion item = event block */
-.acc-item {
-  position: relative;
-  margin: 1.5rem 0;
-  padding: 1.5rem;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 2px;
-  background: #fff;
-}
-
-/* Event title button */
-.acc-btn {
-  all: unset;
-  cursor: pointer;
-  display: block;
-  width: 100%;
-}
-
-/* Event title */
-.acc-btn h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Meta text (date + location) */
-.acc-meta {
-  margin-top: 0.4rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Content inside expanded event */
-.acc-content {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Slideshow placeholder sizing */
-.event-media {
-  max-width: 420px;
-  margin-top: 1rem;
-}
-/* ===== Timeline (Events) ===== */
 
 .timeline {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 5rem;
 }
 
+/* vertical line */
 .timeline::before {
   content: "";
   position: absolute;
-  left: 2rem;
+  left: 2.5rem;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -193,26 +139,35 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   opacity: 0.6;
 }
 
-/* Year label */
-.timeline-year {
+/* year on far left */
+.timeline-group {
   position: relative;
-  margin-left: -3.5rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  font-size: 1.1rem;
+  margin-bottom: 3rem;
 }
 
-/* Each event */
+.timeline-year {
+  position: absolute;
+  left: -5rem;
+  top: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* event box */
 .acc-item {
   position: relative;
+  margin: 1.5rem 0;
+  border: 1px solid #eee;
+  background: #fff;
 }
 
-/* Horizontal connector */
-.timeline-connector {
+/* horizontal connector */
+.acc-item::before {
+  content: "";
   position: absolute;
-  left: -2rem;
+  left: -2.5rem;
   top: 1.4rem;
-  width: 1.5rem;
+  width: 2rem;
   height: 1px;
   background: var(--timeline-blue);
   opacity: 0.6;
