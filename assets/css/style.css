@@ -122,24 +122,6 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   --timeline-blue: #5f6f82; /* slate blue */
 }
 
-/* Timeline container */
-#events {
-  position: relative;
-  padding-left: 3rem;
-}
-
-/* Vertical line */
-#events::before {
-  content: "";
-  position: absolute;
-  left: 1rem;
-  top: 2.5rem;
-  bottom: 0;
-  width: 1px;
-  background: var(--timeline-blue);
-  opacity: 0.5;
-}
-
 /* Year */
 .timeline-year {
   position: relative;
