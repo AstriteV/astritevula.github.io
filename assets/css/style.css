@@ -32,15 +32,6 @@ nav a{font-size:14px; color:#111; opacity:0.9;}
 .reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
 .reveal.visible{opacity:1; transform:none;}
 
-/* Timeline (Exhibitions) */
-.timeline-year{
-  margin-top:10px;
-  padding-top:14px;
-  border-top:1px solid #f0f0f0;
-  font-weight:700;
-  letter-spacing:0.04em;
-  font-size:14px;
-}
 .accordion{display:flex; flex-direction:column; gap:10px; margin-top:12px;}
 .acc-item{border:1px solid #eee;}
 .acc-btn{
