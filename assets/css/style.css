@@ -199,6 +199,7 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
 .artwork {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .artwork img {
@@ -207,6 +208,7 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
 
 .artwork-title {
   margin-top: 8px;
+  margin-bottom: 0;
 }
 
 
