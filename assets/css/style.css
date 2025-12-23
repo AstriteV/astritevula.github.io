@@ -257,3 +257,17 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   object-fit: contain !important;
   background: #f6f6f6;
 }
+
+
+
+/* Event video – self-hosted, responsive */
+.event-video {
+  margin-top: 16px;
+  max-width: 720px;
+}
+
+.event-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
