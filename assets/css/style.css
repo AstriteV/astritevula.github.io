@@ -156,8 +156,22 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   .gallery img{height:160px;}
 }
 
+
 /* Emergency visibility fix */
 .reveal {
   opacity: 1 !important;
   transform: none !important;
 }
+
+
+/* Works for Sale titles */
+.artwork {
+  text-align: center;
+}
+
+.artwork-title {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
