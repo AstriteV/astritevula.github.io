@@ -175,3 +175,13 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   color: #333;
 }
 
+
+
+/* Works for Sale – gallery-style titles */
+.artwork-title {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #555;
+}
