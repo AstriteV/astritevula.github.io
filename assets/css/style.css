@@ -192,3 +192,20 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   object-fit: contain;
   background: #f6f6f6; /* subtle frame for non-square works */
 }
+
+
+
+
+/* Align artwork titles horizontally */
+.artwork {
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork img {
+  flex-grow: 1;
+}
+
+.artwork-title {
+  margin-top: 8px;
+}
