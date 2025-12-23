@@ -94,10 +94,17 @@
     <div class="acc-icon">▾</div>
   </button>
 
-  <div id="event-geese" class="acc-panel">
-    <p>Exhibition details to follow.</p>
-    <!-- images to be added later -->
+<div id="event-geese" class="acc-panel">
+  <p>Exhibition details to follow.</p>
+
+  <div class="event-video">
+    <video controls preload="metadata">
+      <source src="assets/video/do-geese-see-god.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
+</div>
+
 </div>
 
       
@@ -221,3 +228,17 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+/* Event video – self-hosted, responsive */
+.event-video {
+  margin-top: 16px;
+  max-width: 720px;
+}
+
+.event-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+        
