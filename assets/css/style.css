@@ -155,3 +155,9 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   .gallery{grid-template-columns:1fr;}
   .gallery img{height:160px;}
 }
+
+/* Emergency visibility fix */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
