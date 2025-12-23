@@ -239,3 +239,21 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   object-fit: contain;
   background: #f6f6f6; /* subtle frame */
 }
+
+
+
+
+/* EVENTS – force full artwork visibility (override all cropping) */
+.event-images {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.event-images img {
+  height: auto !important;
+  width: auto !important;
+  max-height: 180px;
+  object-fit: contain !important;
+  background: #f6f6f6;
+}
