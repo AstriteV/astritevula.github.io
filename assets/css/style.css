@@ -181,3 +181,14 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   text-transform: uppercase;
   color: #555;
 }
+
+
+
+
+/* Artwork images – show full image, no cropping */
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #f6f6f6; /* subtle frame for non-square works */
+}
