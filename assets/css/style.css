@@ -222,3 +222,20 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   align-items: stretch;
 }
 
+
+
+
+/* Event image strips – show full artwork, no cropping */
+.event-images {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.event-images img {
+  max-height: 180px;   /* controls strip height */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: #f6f6f6; /* subtle frame */
+}
