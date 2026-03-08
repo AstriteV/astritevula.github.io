@@ -250,15 +250,6 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   align-items: center;
 }
 
-.event-images img {
-  height: auto !important;
-  width: auto !important;
-  max-height: 180px;
-  object-fit: contain !important;
-  background: #f6f6f6;
-}
-
-
 
 /* Event video – self-hosted, responsive */
 .event-video {
