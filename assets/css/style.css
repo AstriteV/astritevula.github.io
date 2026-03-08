@@ -272,12 +272,14 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   display: block;
 }
 
-
-/* Larger event poster display */
+/* Large display only when there is ONE image */
 .event-images img {
-  max-height: 420px;
+  max-height: 180px;
   width: auto;
   height: auto;
   object-fit: contain;
-  display: block;
+}
+
+.event-images img:only-child {
+  max-height: 420px;
 }
