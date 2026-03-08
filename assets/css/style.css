@@ -271,3 +271,13 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   height: auto;
   display: block;
 }
+
+
+/* Larger event poster display */
+.event-images img {
+  max-height: 420px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
