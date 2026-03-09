@@ -156,50 +156,18 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
 }
 
 
-
 /* Emergency visibility fix */
 .reveal {
   opacity: 1 !important;
   transform: none !important;
 }
 
-
-
 /* Works for Sale titles */
-.artwork {
-  text-align: center;
-}
-
-
-
-/* Works for Sale – gallery-style titles */
-.artwork-title {
-  margin-top: 8px;
-  font-size: 0.8rem;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #555;
-}
-
-
-
-
-/* Artwork images – show full image, no cropping */
-.gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background: #f6f6f6; /* subtle frame for non-square works */
-}
-
-
-
-
-/* Align artwork titles horizontally */
 .artwork {
   display: flex;
   flex-direction: column;
   height: 100%;
+  text-align: center;
 }
 
 .artwork img {
@@ -209,12 +177,13 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
 .artwork-title {
   margin-top: 8px;
   margin-bottom: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #555;
 }
 
-
-
-
-/* Gallery layout – stretch items so titles align */
+/* Works gallery layout */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -222,36 +191,36 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   align-items: stretch;
 }
 
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #f6f6f6;
+}
 
-
-
-/* Event image strips – show full artwork, no cropping */
+/* Event image strips */
 .event-images {
   display: flex;
   gap: 14px;
   align-items: center;
+  margin-top: 12px;
 }
 
 .event-images img {
-  max-height: 180px;   /* controls strip height */
+  max-height: 180px;
   width: auto;
   height: auto;
   object-fit: contain;
-  background: #f6f6f6; /* subtle frame */
+  display: block;
+  background: #f6f6f6;
+  border: 1px solid #f3f3f3;
 }
 
-
-
-
-/* EVENTS – force full artwork visibility (override all cropping) */
-.event-images {
-  display: flex;
-  gap: 14px;
-  align-items: center;
+.event-images img:only-child {
+  max-height: 420px;
 }
 
-
-/* Event video – self-hosted, responsive */
+/* Event video */
 .event-video {
   margin-top: 16px;
   max-width: 720px;
@@ -261,16 +230,4 @@ footer{padding:24px 0; text-align:center; color:var(--muted); font-size:13px; bo
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* Large display only when there is ONE image */
-.event-images img {
-  max-height: 180px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.event-images img:only-child {
-  max-height: 420px;
 }
