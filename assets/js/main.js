@@ -1,4 +1,4 @@
-document.querySelectorAll(".acc-btn").forEach(btn => {
+document.querySelectorAll(".gallery img, .event-images img").forEach(img => {
 
   const panel = document.getElementById(btn.dataset.target);
 
