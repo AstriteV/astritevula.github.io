@@ -1,4 +1,4 @@
-document.querySelectorAll(".gallery img, .event-images img").forEach(img => {
+document.querySelectorAll(".acc-btn").forEach(btn => {
 
   const panel = document.getElementById(btn.dataset.target);
 
@@ -11,4 +11,20 @@ document.querySelectorAll(".gallery img, .event-images img").forEach(img => {
     panel.classList.toggle("open");
   });
 
+});
+
+
+// LIGHTBOX
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".gallery img, .event-images img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.dataset.full || img.src;
+    lightbox.style.display = "flex";
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
 });
